@@ -2,303 +2,209 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Blink-182 - Perfil Musical</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Perfil Musical - Blink-182</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
+      background-color: #121212;
+      color: white;
       font-family: Arial, sans-serif;
     }
+    header {
+      text-align: center;
+      margin-top: 2rem;
+    }
     h1 {
-      text-align: center;
       color: #ff0066;
-      font-family: 'Impact', sans-serif;
+      font-size: 3rem;
+      text-shadow: 0 0 5px #6600ff;
     }
-    #perfil {
-      background-color: #1c1c1c;
-      color: white;
-      padding: 20px;
-      border: 2px solid #ff0066;
-      border-radius: 10px;
-      max-width: 900px;
-      margin: auto;
+    .navbar {
+      background-color: #1e1e1e;
     }
-    .main-img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .main-img:hover {
-      border: 4px solid #ff0066;
-    }
-    .logo {
-      width: 80px;
-      display: block;
-      margin: 10px 0;
-    }
-    #ouvirAgora {
-      background-color: #ff0066;
-      color: white;
-      font-size: 22px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.5s, transform 0.3s;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    #ouvirAgora:hover {
-      background-color: #e6005c;
-      transform: scale(1.05);
-    }
-    #ouvirAgora:active {
-      border: 2px solid white;
-    }
-
-    .dropdown-menu {
-      background-color: #222;
-      color: white;
-    }
-    .dropdown-item {
-      color: white;
-    }
-    .dropdown-item:hover {
-      background-color: #444;
-    }
-
-    .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .album {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 120px;
-      transition: transform 0.3s;
-    }
-    .album img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-    }
-    .album:hover {
-      transform: translateY(-5px);
-    }
-    .album:hover p {
+    .navbar a {
       color: #ff0066;
     }
-
-    .tabela-shows {
-      display: grid;
-      grid-template-columns: 100px 150px 150px 150px;
-      gap: 5px;
-      max-width: 700px;
-      margin: 20px auto;
-      text-align: center;
+    .navbar-nav .dropdown-menu {
+      background-color: #1e1e1e;
     }
-    .tabela-shows div {
-      padding: 10px;
-      border: 1px solid #ccc;
+    .container {
+      margin-top: 3rem;
     }
-    .tabela-shows .header {
-      background-color: #ff0066;
-      color: white;
-      font-weight: bold;
+    .row {
+      margin-bottom: 3rem;
     }
-    .tabela-shows div:nth-child(8n), .tabela-shows div:nth-child(8n-1), 
-    .tabela-shows div:nth-child(8n-2), .tabela-shows div:nth-child(8n-3) {
-      background-color: #f9f9f9;
-    }
-    .tabela-shows div:hover {
-      background-color: #f0e6f6;
-    }
-
-    .generos-musicais ol > li {
-      color: #ff0066;
-      border-left: 3px solid #ff0066;
-      padding-left: 5px;
-    }
-    .generos-musicais ul > li {
-      color: #333;
-    }
-    .generos-musicais ul > li:hover {
-      color: #ff0066;
-      border-bottom: 1px solid #ff0066;
-    }
-
-    table {
-      width: 90%;
-      border-collapse: collapse;
-      margin: auto;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    table, th, td {
-      border: 1px solid #666;
-    }
-    thead {
-      background-color: #ff0066;
+    .card {
+      background-color: #1e1e1e;
       color: white;
     }
-    tbody tr:nth-child(n+3) {
-      background-color: #f0f8ff;
+    .card-body {
+      text-align: center;
     }
-    tbody tr:hover {
-      background-color: #ffe6f0;
-    }
-
     blockquote {
       font-style: italic;
-      background-color: #f2f2f2;
-      border-left: 4px solid #ff0066;
-      padding: 10px;
-      margin: 10px 0;
+      color: #ccc;
+      border-left: 5px solid #ff0066;
+      padding-left: 1rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      text-align: center;
+      position: relative;
     }
-
-    @media (max-width: 600px) {
-      body {
-        background-color: orange;
-      }
-      #ouvirAgora {
-        background-color: #cc5500;
-      }
+    blockquote footer {
+      font-size: 1rem;
+      color: #ff0066;
+      text-align: right;
+      margin-top: 10px;
+      font-weight: bold;
     }
-
-    @media (min-width: 601px) and (max-width: 900px) {
-      body {
-        background-color: blue;
-      }
-      #ouvirAgora {
-        background-color: #0055cc;
-      }
+    ol {
+      margin-left: 2rem;
+      font-size: 1.1rem;
+      color: #ddd;
     }
-
-    @media (min-width: 901px) {
-      body {
-        background-color: purple;
-      }
-      #ouvirAgora {
-        background-color: #9900cc;
-      }
+    ol li {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #ff0066;
+      text-shadow: 0 0 5px #6600ff;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+    .img-logo {
+      width: 150px;
+      margin-top: 20px;
+    }
+    .img-band {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Blink-182</h1>
+  <header>
+    <!-- Logo da Banda -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Blink-182_logo.svg" alt="Logo Blink-182" class="img-logo">
+    <h1>Blink-182</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#about">Sobre a Banda</a>
+        <a class="navbar-brand" href="#quote">Citação</a>
+        <a class="navbar-brand" href="#top-songs">Top 3 Músicas</a>
+        <!-- Menu Suspenso -->
+        <div class="dropdown">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Gêneros Musicais
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Jazz</a></li>
+            <li><a class="dropdown-item" href="#">Pop</a></li>
+            <li><a class="dropdown-item" href="#">Rock</a></li>
+            <li><a class="dropdown-item" href="#">MPB</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <div id="perfil">
-    <img src="/img/blink182_logo.png" alt="Logo Blink-182" class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Enema_of_the_State.jpg" alt="Capa do álbum" class="main-img">
-    
-    <p>Blink-182 é uma banda de pop punk formada na Califórnia. Com letras irreverentes e melódicas, conquistaram milhões de fãs. Sua energia nos palcos é incomparável.</p>
-    
-    <blockquote>"What's my age again? Nobody likes you when you're 23..."</blockquote>
+  <main class="container">
 
-    <h3>Álbuns Favoritos</h3>
-    <ol>
-      <li>Enema of the State</li>
-      <li>Take Off Your Pants and Jacket</li>
-      <li>Neighborhoods</li>
-    </ol>
+    <!-- Desafio 1: Descrição da Banda -->
+    <section id="about">
+      <h2>Sobre a Banda</h2>
+      <p>Blink-182 é uma banda de rock americana formada em 1992 em Poway, Califórnia. A banda é conhecida pelo seu estilo único de pop punk e suas letras cheias de energia.</p>
+      <!-- Imagem da Banda -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Blink_182_-_Live.jpg" alt="Blink-182 ao vivo" class="img-band">
+    </section>
 
-    <h3>Curiosidades</h3>
-    <ul>
-      <li>O nome original era Blink, mas precisaram mudar por direitos autorais.</li>
-      <li>O baterista Travis Barker entrou depois do primeiro álbum.</li>
-      <li>Já se separaram e retornaram mais de uma vez.</li>
-    </ul>
+    <!-- Desafio 2: Adicionar um link para uma playlist do Spotify -->
+    <section>
+      <h2>Ouça no Spotify</h2>
+      <a href="https://open.spotify.com/artist/0C8ZW7ezQK1wiQ4d4p5xM4" target="_blank" class="btn btn-danger">Abrir Spotify</a>
+    </section>
 
-    <a href="https://www.youtube.com/watch?v=k1BFHYtZlAU" target="_blank">
-      <button id="ouvirAgora">Ouvir Agora</button>
-    </a>
-  </div>
+    <!-- Desafio 3: Adicionar uma imagem da capa de um álbum -->
+    <section>
+      <h2>Álbum "Enema of the State"</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Blink-182_-_Enema_of_the_State.png" alt="Enema of the State" class="img-fluid">
+    </section>
 
-  <br>
+    <!-- Desafio 4: Adicionar um botão com ícone -->
+    <section>
+      <h2>Conecte-se com a Banda</h2>
+      <a href="https://twitter.com/blink182" class="btn btn-outline-light">
+        <i class="fab fa-twitter"></i> Seguir no Twitter
+      </a>
+    </section>
 
-  <!-- Desafio 3: Menu Dropdown com Bootstrap -->
-  <div class="d-flex justify-content-center my-3">
-    <div class="dropdown">
-      <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
-        🎵 Escolha seu som
-      </button>
-      <ul class="dropdown-menu text-center">
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=rock+music" target="_blank">🎸 Rock</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=pop+music" target="_blank">🎤 Pop</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=jazz+music" target="_blank">🎷 Jazz</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=mpb" target="_blank">🎶 MPB</a></li>
+    <!-- Desafio 5: Estilizar uma tabela com informações sobre membros da banda -->
+    <section>
+      <h2>Membros da Banda</h2>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark Hoppus</td>
+            <td>Baixista, vocalista</td>
+          </tr>
+          <tr>
+            <td>Travis Barker</td>
+            <td>Baterista</td>
+          </tr>
+          <tr>
+            <td>Matt Skiba</td>
+            <td>Guitarrista, vocalista</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Desafio 6: Criar uma lista de álbuns -->
+    <section>
+      <h2>Discografia</h2>
+      <ul>
+        <li>Cheshire Cat (1995)</li>
+        <li>Enema of the State (1999)</li>
+        <li>Take Off Your Pants and Jacket (2001)</li>
+        <li>California (2016)</li>
       </ul>
-    </div>
-  </div>
+    </section>
 
-  <!-- Desafio 4: Galeria com Flexbox -->
-  <div class="galeria">
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 1</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 2</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 3</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 4</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 5</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 6</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 7</p></div>
-    <div class="album"><img src="https://i.imgur.com/8z6pYhH.jpg"><p>Album 8</p></div>
-  </div>
+    <!-- Desafio 7: Adicionar uma citação impactante -->
+    <section id="quote">
+      <blockquote>
+        "All the small things, true care, truth brings..."
+        <footer>- Blink-182</footer>
+      </blockquote>
+    </section>
 
-  <!-- Desafio 5: Grade de Shows -->
-  <div class="tabela-shows">
-    <div class="header">Data</div><div class="header">Cidade</div><div class="header">Local</div><div class="header">Artista</div>
-    <div>05/06</div><div>São Paulo</div><div>Allianz</div><div>Blink-182</div>
-    <div>10/06</div><div>Rio</div><div>Jeunesse</div><div>Blink-182</div>
-    <div>12/06</div><div>BH</div><div>Mineirão</div><div>Blink-182</div>
-    <div>15/06</div><div>Curitiba</div><div>Pedreira</div><div>Blink-182</div>
-    <div>20/06</div><div>Porto Alegre</div><div>Beira-Rio</div><div>Blink-182</div>
-  </div>
+    <!-- Desafio 8: Adicionar uma lista com as Top 3 músicas -->
+    <section id="top-songs">
+      <h2>Top 3 Músicas</h2>
+      <ol>
+        <li>All The Small Things</li>
+        <li>First Date</li>
+        <li>Feeling This</li>
+      </ol>
+    </section>
 
-  <!-- Desafio 7: Lista Estilizada -->
-  <div class="generos-musicais mx-5">
-    <ol>
-      <li>Rock
-        <ul>
-          <li>Blink-182</li>
-          <li>Green Day</li>
-        </ul>
-      </li>
-      <li>Pop
-        <ul>
-          <li>Dua Lipa</li>
-          <li>Harry Styles</li>
-        </ul>
-      </li>
-    </ol>
-  </div>
+  </main>
 
-  <!-- Desafio 8: Tabela -->
-  <table>
-    <caption>Discografia</caption>
-    <thead>
-      <tr><th>Artista</th><th>Álbum</th><th>Ano</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Blink-182</td><td>Enema of the State</td><td>1999</td></tr>
-      <tr><td>Blink-182</td><td>Take Off Your Pants and Jacket</td><td>2001</td></tr>
-      <tr><td>Blink-182</td><td>Neighborhoods</td><td>2011</td></tr>
-      <tr><td>Blink-182</td><td>California</td><td>2016</td></tr>
-      <tr><td>Blink-182</td><td>Nine</td><td>2019</td></tr>
-    </tbody>
-  </table>
-
-  <footer class="text-center bg-dark text-white p-2">
-    Desenvolvido por Letícia | Turma Desenvolvimento Web
+  <footer class="text-center py-3" style="background-color: #1e1e1e;">
+    <p>&copy; 2025 Blink-182 Official</p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
