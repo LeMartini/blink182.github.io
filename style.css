@@ -7,26 +7,27 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #111;
+  background-color: #0a0a0a; /* Cor de fundo preta */
   color: #fff;
   text-align: center;
 }
 
-/* Título da página */
+/* Título da página (Logo estilizado do Blink-182) */
 h1 {
-  font-family: 'Impact', sans-serif;
-  font-size: 3em;
-  color: #ff3385; /* Cor de rosa estilo Blink-182 */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte mais informal, como o estilo do logo da banda */
+  font-size: 4em;
+  color: #f53680; /* Rosa vibrante do Blink-182 */
   text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-top: 20px;
+  letter-spacing: 10px;
+  margin-top: 40px;
+  text-shadow: 3px 3px 0px #333; /* Sombra no texto para dar mais destaque */
 }
 
 /* Imagem de destaque */
 #image-destaque {
   width: 100%;
   height: auto;
-  border: 5px solid #ff3385;
+  border: 5px solid #f53680; /* Cor da borda em rosa */
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -50,42 +51,42 @@ ol, ul {
 
 /* Estilo para as listas ordenadas e não ordenadas */
 ol li, ul li {
-  font-size: 1.1em;
-  color: #ff3385;
+  font-size: 1.2em;
+  color: #f53680;
   margin: 10px 0;
 }
 
 /* Estilo para o link */
 a {
-  color: #00ff99;
+  color: #00ff99; /* Cor verde neon do Blink-182 */
   text-decoration: none;
   font-size: 1.1em;
 }
 
 a:hover {
-  color: #ff3385;
+  color: #f53680;
   text-decoration: underline;
 }
 
 /* Botão "Ouvir Agora" */
 button {
-  background-color: #ff3385;
+  background-color: #f53680; /* Cor de fundo rosa Blink-182 */
   color: #fff;
   font-size: 1.3em;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px; /* Botão com borda arredondada */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #00ff99;
+  background-color: #00ff99; /* Verde neon no hover */
   transform: scale(1.05);
 }
 
 button:active {
-  border: 2px solid #ff3385;
+  border: 3px solid #f53680;
 }
 
 /* Rodapé */
@@ -103,7 +104,7 @@ footer {
   margin: 20px auto;
   border-radius: 10px;
   width: 80%;
-  border: 2px solid #ff3385;
+  border: 2px solid #f53680; /* Borda rosa */
 }
 
 /* Logo oficial */
@@ -119,8 +120,8 @@ blockquote {
   margin: 30px 0;
   font-size: 1.2em;
   font-style: italic;
-  color: #ff3385;
-  border-left: 5px solid #ff3385;
+  color: #f53680;
+  border-left: 5px solid #f53680; /* Borda rosa do Blink-182 */
 }
 
 blockquote p {
@@ -139,7 +140,7 @@ blockquote p {
 }
 
 .dropdown-item:hover {
-  background-color: #ff3385;
+  background-color: #f53680; /* Hover rosa */
 }
 
 /* Galeria de capas */
@@ -182,7 +183,7 @@ blockquote p {
 
 .grid-shows header {
   background-color: #333;
-  color: #ff3385;
+  color: #f53680;
   padding: 10px;
   text-align: center;
   font-size: 1.2em;
@@ -198,19 +199,19 @@ blockquote p {
 }
 
 .grid-shows .show:hover {
-  background-color: #ff3385;
+  background-color: #f53680; /* Hover rosa */
 }
 
 /* Página responsiva */
 @media (max-width: 600px) {
   body {
-      background-color: #ff7b7b;
+      background-color: #ff7b7b; /* Fundo vermelho vibrante */
   }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
   body {
-      background-color: #6a4b8c;
+      background-color: #6a4b8c; /* Fundo roxo vibrante */
   }
 }
 
