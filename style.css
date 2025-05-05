@@ -1,165 +1,114 @@
-/* Corpo */
 body {
-  background-color: #222;
-  font-family: 'Rockwell', serif;
+  background-color: #0d0d0d;
   color: #f1f1f1;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+header {
+  background: linear-gradient(to right, #ff0066, #6600ff);
+  padding: 2rem;
+  text-align: center;
+}
+
 header h1 {
-  font-family: 'Impact', sans-serif;
-  color: #ff4500;
-  margin-top: 20px;
-  font-size: 4rem;
-  text-shadow: 4px 4px 6px #000;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 #main-content {
-  background-color: #333;
-  border: 3px solid #ff4500;
-  padding: 30px;
-  margin: 30px auto;
-  width: 80%;
-  max-width: 900px;
-  border-radius: 12px;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
 }
 
 #main-image {
-  width: 70%;
-  max-width: 500px;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
-  border: 5px solid #ff4500;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px #ff0066;
 }
 
 #logo {
-  width: 250px;
-  max-width: 100%;
-  height: auto;
-  margin: 20px auto;
+  width: 120px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 ol, ul {
-  text-align: left;
-  margin: 0 auto 20px;
-  max-width: 600px;
+  margin-left: 1.5rem;
 }
 
 blockquote {
   font-style: italic;
-  background-color: #444;
-  padding: 20px;
-  border-left: 8px solid #ff4500;
-  margin: 20px auto;
-  max-width: 600px;
-  color: #bbb;
+  color: #ccc;
+  border-left: 4px solid #ff0066;
+  padding-left: 1rem;
+  margin: 2rem 0;
 }
 
-button {
-  background-color: #ff4500;
-  color: #fff;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-button:hover {
-  background-color: #ff6347;
-  transform: scale(1.05);
-}
-
-footer {
-  background-color: #111;
-  color: #fff;
-  padding: 15px;
-  font-size: 1rem;
-  margin-top: 30px;
-}
-
-/* Botão Interativo */
 #play-btn {
-  background-color: #ff4500;
+  background-color: #ff0066;
   color: #fff;
-  padding: 12px 25px;
-  font-size: 1.2rem;
   border: none;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
 }
 
 #play-btn:hover {
-  background-color: #ff6347;
-  transform: scale(1.05);
+  background-color: #e6005c;
 }
 
-/* Menu Dropdown */
-.dropdown-menu {
-  background-color: #111;
-  color: #fff;
+.album img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #444;
 }
 
-.dropdown-item:hover {
-  background-color: #ff6347;
-}
-
-/* Galeria de Álbuns */
-.gallery .d-flex {
-  gap: 15px;
-}
-
-.gallery .album {
+.album p {
   text-align: center;
-  width: 200px;
+  font-size: 0.9rem;
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-.gallery p {
-  color: #f1f1f1;
-  font-size: 1.1rem;
-  margin-top: 10px;
-}
-
-/* Tabela de Discos */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
-table th, table td {
-  border: 1px solid #555;
-  padding: 12px;
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ff0066;
+}
+
+footer {
   text-align: center;
-}
-
-table th {
-  background-color: #ff4500;
-  color: white;
-}
-
-table tr:nth-child(even) {
-  background-color: #444;
-}
-
-table tr:hover {
-  background-color: #555;
+  padding: 1rem;
+  background-color: #111;
+  color: #777;
+  margin-top: 3rem;
 }
