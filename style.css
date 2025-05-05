@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f1e3;
+  background-color: #f7f0e5;
   font-family: 'Courier New', Courier, monospace;
   color: #333;
   text-align: center;
@@ -70,11 +70,13 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
   background-color: #ff69b4;
+  transform: scale(1.05);
 }
 
 footer {
@@ -95,6 +97,7 @@ footer {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.5s, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 #play-btn:hover {
