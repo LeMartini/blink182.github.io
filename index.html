@@ -1,125 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blink-182 — Página Musical</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banda Blink-182</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Blink-182</h1>
-  </header>
+  <div class="container">
+    <!-- Desafio 1 -->
+    <header class="text-center my-5">
+      <h1 id="band-name">Blink-182</h1>
+      <img src="https://via.placeholder.com/600x400" alt="Blink-182" class="img-fluid border" id="main-img">
+      <p class="lead mt-3">A banda Blink-182 é um dos maiores nomes do pop-punk, com músicas que definem gerações.</p>
+      <div id="bio" class="bg-dark text-light p-4">
+        <h3>Sobre a banda</h3>
+        <p>Formada nos anos 90, a banda Blink-182 é conhecida por seus hits animados e letras irreverentes.</p>
+        <p>Seu estilo mistura punk rock e pop, conquistando fãs ao redor do mundo.</p>
+        <p>Com um legado imenso, continuam a ser um ícone do cenário musical.</p>
+      </div>
+    </header>
 
-  <div id="perfil">
-    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/b6/Blink-182_-_One_More_Time.jpg/220px-Blink-182_-_One_More_Time.jpg" alt="Blink-182" class="main-img">
+    <!-- Desafio 1 - Lista Ordenada e Não Ordenada -->
+    <section class="row">
+      <div class="col-md-6">
+        <h3>Álbuns ou Músicas Preferidas</h3>
+        <ol>
+          <li>All the Small Things</li>
+          <li>What's My Age Again?</li>
+          <li>Adam's Song</li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <h3>Curiosidades</h3>
+        <ul>
+          <li>O nome "Blink-182" foi inspirado por um número aleatório.</li>
+          <li>O álbum "Enema of the State" catapultou a banda para a fama mundial.</li>
+          <li>Os membros da banda são conhecidos pelo senso de humor irreverente.</li>
+        </ul>
+      </div>
+    </section>
 
-    <img src="https://logodownload.org/wp-content/uploads/2017/05/blink-182-logo-1.png" alt="Logo Blink-182" class="logo-img">
+    <!-- Desafio 1 - Link e Botão -->
+    <section class="text-center mt-4">
+      <a href="https://www.youtube.com/watch?v=9Ht5RZpK8U4" target="_blank" class="btn btn-dark" id="play-btn">Ouvir Agora</a>
+    </section>
 
-    <p>Blink-182 é uma banda de rock alternativo formada nos anos 90. Eles revolucionaram o pop punk com letras divertidas e atitude irreverente. Até hoje, continuam influenciando gerações com seu som marcante e visual autêntico.</p>
+    <!-- Desafio 1 - Rodapé -->
+    <footer class="text-center mt-5">
+      <p>&copy; 2025 Blink-182 | Feito por [Seu Nome]</p>
+    </footer>
 
-    <blockquote>"All the small things, true care, truth brings..."</blockquote>
+    <!-- Desafio 2 - Botão Interativo -->
+    <section class="text-center">
+      <button id="interactive-btn" class="btn" onclick="window.location.href='https://www.spotify.com'">Ouvir Agora</button>
+    </section>
 
-    <ol>
-      <li>All the Small Things</li>
-      <li>I Miss You</li>
-      <li>What's My Age Again?</li>
-    </ol>
+    <!-- Desafio 3 - Dropdown Musical -->
+    <section class="mt-5">
+      <div class="dropdown d-flex justify-content-center">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Escolha seu som
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=9Ht5RZpK8U4" target="_blank">Rock</a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=abcd1234" target="_blank">Pop</a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=xyz9876" target="_blank">Jazz</a></li>
+          <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=pqr6543" target="_blank">MPB</a></li>
+        </ul>
+      </div>
+    </section>
 
-    <ul>
-      <li>Já tocaram com Green Day.</li>
-      <li>Possuem mais de 15 milhões de ouvintes mensais no Spotify.</li>
-      <li>Foram trilha sonora de diversos filmes dos anos 2000.</li>
-    </ul>
+    <!-- Desafio 4 - Galeria de Capas -->
+    <section class="mt-5">
+      <div class="d-flex flex-wrap gap-3">
+        <div class="album">
+          <img src="https://via.placeholder.com/150x150" alt="Álbum 1">
+          <p>Album 1</p>
+        </div>
+        <div class="album">
+          <img src="https://via.placeholder.com/150x150" alt="Álbum 2">
+          <p>Album 2</p>
+        </div>
+        <!-- Continue a galeria com mais álbuns -->
+      </div>
+    </section>
 
-    <a href="https://www.youtube.com/watch?v=9Ht5RZpzPqw" target="_blank">
-      <button id="ouvirAgora">Ouvir Agora</button>
-    </a>
+    <!-- Desafio 5 - Grade de Shows -->
+    <section class="mt-5">
+      <table class="table table-bordered">
+        <thead class="bg-dark text-light">
+          <tr>
+            <th>Data</th>
+            <th>Cidade</th>
+            <th>Local</th>
+            <th>Artista</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/12/2025</td>
+            <td>São Paulo</td>
+            <td>Espaço das Américas</td>
+            <td>Blink-182</td>
+          </tr>
+          <!-- Continue com mais shows -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Desafio 6 - Media Queries -->
+    <section class="mt-5" id="responsive-section">
+      <h3>Responsive Section</h3>
+      <p>Conteúdo que muda de acordo com o tamanho da tela.</p>
+    </section>
   </div>
 
-  <!-- Desafio 3: Menu Dropdown -->
-  <div class="d-flex justify-content-center mt-4">
-    <div class="dropdown">
-      <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        🎵 Escolha seu som
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark text-light">
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=rock" target="_blank">Rock</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=pop" target="_blank">Pop</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=jazz" target="_blank">Jazz</a></li>
-        <li><a class="dropdown-item" href="https://www.youtube.com/results?search_query=mpb" target="_blank">MPB</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Desafio 4: Galeria de Capas -->
-  <section class="galeria">
-    <div class="album"><img src="https://i.scdn.co/image/ab67616d00001e02c1cbb40451c4e21e7a774ce5"><p>One More Time</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/2/28/Blink-182_-_Enema_of_the_State_cover.jpg"><p>Enema of the State</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Blink-182_-_Take_Off_Your_Pants_and_Jacket_cover.jpg"><p>Take Off...</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/d/d1/Blink-182_-_Untitled_album_cover.png"><p>Untitled</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/7/72/Neighborhoods.jpg"><p>Neighborhoods</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/4/40/California_blink_182_album_cover.jpg"><p>California</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Nine_blink_182_album.png"><p>Nine</p></div>
-    <div class="album"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Blink-182_-_Dogs_Eating_Dogs_cover.jpg"><p>Dogs Eating Dogs</p></div>
-  </section>
-
-  <!-- Desafio 5: Grade de Shows -->
-  <section class="shows">
-    <div class="header">Data</div>
-    <div class="header">Cidade</div>
-    <div class="header">Local</div>
-    <div class="header">Artista</div>
-
-    <div>05/06</div><div>São Paulo</div><div>Allianz Parque</div><div>Blink-182</div>
-    <div>12/06</div><div>Rio de Janeiro</div><div>Jeunesse Arena</div><div>Blink-182</div>
-    <div>18/06</div><div>Belo Horizonte</div><div>Mineirinho</div><div>Blink-182</div>
-    <div>22/06</div><div>Porto Alegre</div><div>Arena do Grêmio</div><div>Blink-182</div>
-    <div>30/06</div><div>Curitiba</div><div>Pedreira</div><div>Blink-182</div>
-  </section>
-
-  <!-- Desafio 7: Lista Estilizada -->
-  <section class="generos">
-    <ol>
-      <li>Rock
-        <ul>
-          <li>Blink-182</li>
-          <li>Green Day</li>
-        </ul>
-      </li>
-      <li>Pop
-        <ul>
-          <li>Dua Lipa</li>
-          <li>Harry Styles</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <!-- Desafio 8: Tabela de Discos -->
-  <table>
-    <caption>Discografia Selecionada</caption>
-    <thead>
-      <tr>
-        <th>Artista</th>
-        <th>Álbum</th>
-        <th>Ano</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Blink-182</td><td>Enema of the State</td><td>1999</td></tr>
-      <tr><td>Blink-182</td><td>Take Off Your Pants...</td><td>2001</td></tr>
-      <tr><td>Blink-182</td><td>California</td><td>2016</td></tr>
-      <tr><td>Blink-182</td><td>Nine</td><td>2019</td></tr>
-      <tr><td>Blink-182</td><td>One More Time</td><td>2023</td></tr>
-    </tbody>
-  </table>
-
-  <footer>
-    <p>Desenvolvido por [Seu Nome] — Turma X</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

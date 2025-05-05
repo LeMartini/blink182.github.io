@@ -1,168 +1,65 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
-  color: #eee;
-  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
 }
 
-h1 {
-  color: #ff69b4;
-  font-family: 'Impact', fantasy;
-  margin: 20px;
+#band-name {
+  color: #ff007f;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-#perfil {
-  background: #111;
-  border: 2px solid #444;
-  padding: 20px;
-  margin: 20px;
+#main-img {
+  transition: border 0.3s ease;
 }
 
-.main-img {
-  width: 200px;
-  transition: 0.3s;
-}
-.main-img:hover {
-  border: 3px solid #ff69b4;
+#main-img:hover {
+  border: 3px solid #ff007f;
 }
 
-.logo-img {
-  width: 100px;
-  margin: 10px;
-}
-
-blockquote {
-  font-style: italic;
-  color: #0ff;
-  margin: 20px;
-}
-
-#ouvirAgora {
-  background-color: #ff69b4;
-  font-size: 22px;
-  padding: 10px 20px;
-  border: none;
-  transition: background-color 0.5s, transform 0.3s;
-  box-shadow: 0 0 10px #ff69b4;
-}
-#ouvirAgora:hover {
-  background-color: #c71585;
-  transform: scale(1.05);
-}
-#ouvirAgora:active {
-  border: 2px solid #fff;
-}
-
-/* Galeria Flexbox */
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+#bio {
+  background-color: #222;
   padding: 20px;
 }
-.album {
-  width: 150px;
-  text-align: center;
+
+#interactive-btn {
+  background-color: #ff007f;
+  color: white;
+  font-size: 20px;
 }
+
+#interactive-btn:hover {
+  background-color: #ff4d94;
+}
+
 .album img {
-  width: 100%;
+  width: 150px;
+  height: 150px;
   transition: transform 0.3s;
 }
-.album:hover img {
+
+.album img:hover {
   transform: translateY(-5px);
 }
-.album p:hover {
-  color: #ff69b4;
-}
 
-/* Shows Grid */
-.shows {
-  display: grid;
-  grid-template-columns: 100px 150px 200px 150px;
-  padding: 20px;
-  text-align: center;
-}
-.shows .header {
-  background-color: #222;
-  font-weight: bold;
-}
-.shows div {
-  padding: 10px;
-  border: 1px solid #333;
-}
-.shows div:nth-child(even) {
-  background-color: #111;
-}
-.shows div:hover {
-  background-color: #333;
-}
-
-/* Generos Estilizados */
-.generos ol > li {
-  color: #ff69b4;
-  border-left: 3px solid #ff69b4;
-  padding-left: 10px;
-}
-.generos ul > li {
-  color: #0ff;
-}
-.generos ul > li:hover {
-  border-bottom: 1px dashed #0ff;
-}
-
-/* Tabela */
 table {
-  width: 80%;
-  margin: 30px auto;
-  border-collapse: collapse;
-}
-caption {
-  caption-side: top;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-thead {
-  background: #222;
-}
-td, th {
-  border: 1px solid #555;
-  padding: 10px;
-  text-align: center;
-}
-tbody tr:nth-child(n+3) {
-  background-color: #333;
-}
-tbody tr:hover {
-  background-color: #555;
+  width: 100%;
 }
 
-/* Media Queries */
-@media screen and (max-width: 599px) {
-  body {
+@media (max-width: 600px) {
+  #responsive-section {
     background-color: orange;
-    font-size: 14px;
-  }
-  #ouvirAgora {
-    background-color: #222;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  body {
+
+@media (min-width: 600px) and (max-width: 900px) {
+  #responsive-section {
     background-color: blue;
-    font-size: 16px;
-  }
-  #ouvirAgora {
-    background-color: #444;
   }
 }
-@media screen and (min-width: 900px) {
-  body {
+
+@media (min-width: 900px) {
+  #responsive-section {
     background-color: purple;
-    font-size: 18px;
-  }
-  #ouvirAgora {
-    background-color: #ff69b4;
   }
 }
