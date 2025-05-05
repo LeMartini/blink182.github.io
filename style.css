@@ -84,3 +84,109 @@ footer {
   font-size: 0.9rem;
   margin-top: 30px;
 }
+
+/* Botão interativo */
+#play-btn {
+  background-color: #d42b2b;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 0.3s ease;
+}
+
+#play-btn:hover {
+  background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+#play-btn:active {
+  border: 2px solid #d42b2b;
+}
+
+/* Menu Dropdown */
+.dropdown-menu {
+  background-color: #333;
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #ff69b4;
+}
+
+/* Galeria de Capas */
+.gallery .d-flex {
+  gap: 15px;
+}
+
+.gallery .album {
+  text-align: center;
+  width: 200px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: translateY(-5px);
+}
+
+.gallery p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Grid de Shows */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.grid-header {
+  background-color: #d42b2b;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  background-color: #f0e6d6;
+}
+
+/* Tabela de Discos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #d42b2b;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
