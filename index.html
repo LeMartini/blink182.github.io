@@ -1,264 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil Musical - Blink-182</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #121212;
-      color: white;
-      font-family: 'Rock Salt', cursive;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-      background-color: #2b2b2b;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    h1 {
-      color: #ff0066;
-      font-size: 4rem;
-      text-shadow: 0 0 10px #ff6699, 0 0 20px #ff0066;
-      font-family: 'Bangers', cursive;
-    }
-    .navbar {
-      background-color: #1e1e1e;
-    }
-    .navbar a {
-      color: #ff0066;
-      text-transform: uppercase;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    .navbar a:hover {
-      color: #ff6699;
-    }
-    .navbar-nav .dropdown-menu {
-      background-color: #1e1e1e;
-    }
-    .container {
-      margin-top: 3rem;
-    }
-    .row {
-      margin-bottom: 3rem;
-    }
-    .card {
-      background-color: #333;
-      color: white;
-      transition: transform 0.3s ease;
-      border: none;
-    }
-    .card-body {
-      text-align: center;
-      transition: background-color 0.3s ease;
-    }
-    .card-body:hover {
-      background-color: #444;
-      transform: scale(1.05);
-    }
-    blockquote {
-      font-style: italic;
-      color: #ccc;
-      border-left: 5px solid #ff0066;
-      padding-left: 1rem;
-      margin: 2rem 0;
-      font-size: 1.3rem;
-      text-align: center;
-      position: relative;
-      transition: all 0.3s ease;
-    }
-    blockquote:hover {
-      background-color: #333;
-      border-color: #ff6699;
-      transform: scale(1.02);
-    }
-    blockquote footer {
-      font-size: 1.2rem;
-      color: #ff0066;
-      text-align: right;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    ol {
-      margin-left: 2rem;
-      font-size: 1.1rem;
-      color: #ddd;
-      list-style-type: decimal;
-    }
-    ol li {
-      margin-bottom: 1rem;
-      transition: color 0.3s ease;
-    }
-    ol li:hover {
-      color: #ff0066;
-    }
-    h2 {
-      color: #ff0066;
-      text-shadow: 0 0 10px #ff6699;
-      margin-top: 2rem;
-      font-size: 2rem;
-    }
-    .img-logo {
-      width: 200px;
-      margin-top: 20px;
-      transition: transform 0.3s ease;
-    }
-    .img-logo:hover {
-      transform: rotate(15deg);
-    }
-    .img-band {
-      width: 100%;
-      max-width: 600px;
-      margin-top: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    }
-    .dropdown-menu {
-      border-radius: 0.5rem;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
-    .btn-outline-light {
-      border-radius: 50px;
-      padding: 10px 20px;
-      transition: all 0.3s ease;
-    }
-    .btn-outline-light:hover {
-      background-color: #ff0066;
-      border-color: #ff0066;
-      color: white;
-    }
-    footer {
-      background-color: #2b2b2b;
-      padding: 20px 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-    footer a {
-      color: #ff0066;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    footer a:hover {
-      color: #ff6699;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil Musical da Blink-182</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ddd;
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            color: #fff;
+        }
+        .blink-text {
+            color: #ff69b4; /* Rosa para a banda Blink-182 */
+            font-family: 'Rock Salt', cursive;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #ccc;
+            text-align: center;
+        }
+        .nav-link {
+            color: #bbb !important;
+        }
+        .nav-link:hover {
+            color: #fff !important;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #333;
+            border: none;
+            color: #ddd;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            color: #ff69b4;
+        }
+        footer {
+            background-color: #222;
+            color: #bbb;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .dropdown-menu {
+            background-color: #333;
+            color: #ddd;
+        }
+        .dropdown-item:hover {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Blink-182_logo.svg" alt="Logo Blink-182" class="img-logo">
-    <h1>Blink-182</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Home</a>
-        <a class="navbar-brand" href="#about">Sobre a Banda</a>
-        <a class="navbar-brand" href="#quote">Citação</a>
-        <a class="navbar-brand" href="#top-songs">Top 3 Músicas</a>
-        <div class="dropdown">
-          <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            Gêneros Musicais
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Jazz</a></li>
-            <li><a class="dropdown-item" href="#">Pop</a></li>
-            <li><a class="dropdown-item" href="#">Rock</a></li>
-            <li><a class="dropdown-item" href="#">MPB</a></li>
-          </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo da Blink-182" width="40"> Blink-182</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gêneros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Jazz</a></li>
+                                <li><a class="dropdown-item" href="#">Pop</a></li>
+                                <li><a class="dropdown-item" href="#">Rock</a></li>
+                                <li><a class="dropdown-item" href="#">MPB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="blink-text text-center mt-5">Bem-vindo ao Perfil Musical da Blink-182!</h1>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="blink.jpg" class="card-img-top" alt="Blink-182">
+                    <div class="card-body">
+                        <h5 class="card-title blink-text">Sobre a Blink-182</h5>
+                        <p class="card-text">A Blink-182 é uma banda de rock formada na Califórnia, conhecida por seu som energético e letras divertidas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="concert.jpg" class="card-img-top" alt="Show da Blink-182">
+                    <div class="card-body">
+                        <h5 class="card-title blink-text">Nossos Shows</h5>
+                        <p class="card-text">A banda realiza turnês internacionais e encanta fãs ao redor do mundo com suas apresentações inesquecíveis!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>Sobre a Banda</h2>
-      <p>Blink-182 é uma banda de rock americana formada em 1992 em Poway, Califórnia. Conhecida por seu estilo de pop punk e suas letras divertidas, a banda conquistou fãs ao redor do mundo.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Blink_182_-_Live.jpg" alt="Blink-182 ao vivo" class="img-band">
-    </section>
+        <div class="section-title mt-5">
+            <h2>Discografia</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="album1.jpg" class="card-img-top" alt="Álbum 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Enema of the State</h5>
+                        <p class="card-text">Lançado em 1999, este álbum é um marco na história da banda e do pop-punk.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="album2.jpg" class="card-img-top" alt="Álbum 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Take Off Your Pants and Jacket</h5>
+                        <p class="card-text">Lançado em 2001, este álbum consolidou a Blink-182 como uma das maiores bandas de pop-punk.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="album3.jpg" class="card-img-top" alt="Álbum 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Blink-182</h5>
+                        <p class="card-text">O álbum de 2003 traz uma sonoridade mais madura e diversificada, marcando a transição da banda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section>
-      <h2>Ouça no Spotify</h2>
-      <a href="https://open.spotify.com/artist/0C8ZW7ezQK1wiQ4d4p5xM4" target="_blank" class="btn btn-outline-light">
-        Abrir Spotify <i class="fab fa-spotify"></i>
-      </a>
-    </section>
+    <footer>
+        <p>&copy; 2025 Blink-182. Todos os direitos reservados.</p>
+    </footer>
 
-    <section>
-      <h2>Álbum "Enema of the State"</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Blink-182_-_Enema_of_the_State.png" alt="Enema of the State" class="img-fluid">
-    </section>
-
-    <section>
-      <h2>Conecte-se com a Banda</h2>
-      <a href="https://twitter.com/blink182" class="btn btn-outline-light">
-        <i class="fab fa-twitter"></i> Seguir no Twitter
-      </a>
-    </section>
-
-    <section>
-      <h2>Membros da Banda</h2>
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Função</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark Hoppus</td>
-            <td>Baixista, vocalista</td>
-          </tr>
-          <tr>
-            <td>Travis Barker</td>
-            <td>Baterista</td>
-          </tr>
-          <tr>
-            <td>Matt Skiba</td>
-            <td>Guitarrista, vocalista</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Discografia</h2>
-      <ul>
-        <li>Cheshire Cat (1995)</li>
-        <li>Enema of the State (1999)</li>
-        <li>Take Off Your Pants and Jacket (2001)</li>
-        <li>California (2016)</li>
-      </ul>
-    </section>
-
-    <section id="quote">
-      <blockquote>
-        "All the small things, true care, truth brings..."
-        <footer>- Blink-182</footer>
-      </blockquote>
-    </section>
-
-    <section id="top-songs">
-      <h2>Top 3 Músicas</h2>
-      <ol>
-        <li>All The Small Things</li>
-        <li>First Date</li>
-        <li>Feeling This</li>
-      </ol>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Blink-182 Official | <a href="https://twitter.com/blink182">Siga-nos no Twitter</a></p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
