@@ -24,18 +24,27 @@ h1 {
 }
 
 #main-image {
-  width: 80%;
+  width: 60%;
+  max-width: 500px;
+  height: auto;
   border-radius: 8px;
+  border: 4px solid #ff69b4;
   transition: border 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 #main-image:hover {
-  border: 4px solid #ff69b4;
+  border-color: #d42b2b;
 }
 
 #logo {
-  width: 100px;
-  margin: 15px 0;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
 }
 
 ol, ul {
