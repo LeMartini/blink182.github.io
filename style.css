@@ -191,29 +191,38 @@ footer {
 .grade-shows {
   display: grid;
   grid-template-columns: 120px 150px 200px 1fr;
-  gap: 5px;
-  margin-bottom: 40px;
+  gap: 0;
+  border: 1px solid #444;
 }
 
 .grade-shows div {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+.grade-shows div:nth-child(4n) {
+  border-right: none;
 }
 
 .grade-shows .header {
   background-color: #6f42c1;
   font-weight: bold;
   color: white;
+  border-top: 1px solid #444;
 }
 
-.grade-shows div:nth-child(n+5):nth-child(8n+1),
-.grade-shows div:nth-child(n+5):nth-child(8n+2),
-.grade-shows div:nth-child(n+5):nth-child(8n+3),
-.grade-shows div:nth-child(n+5):nth-child(8n+4) {
+/* Estiliza linhas pares (exceto cabeçalho) */
+.grade-shows div:nth-child(n+5):nth-child(-n+8),
+.grade-shows div:nth-child(n+13):nth-child(-n+16),
+.grade-shows div:nth-child(n+21):nth-child(-n+24),
+.grade-shows div:nth-child(n+29):nth-child(-n+32),
+.grade-shows div:nth-child(n+37):nth-child(-n+40) {
   background-color: #222;
 }
 
+/* Hover em cada célula (menos cabeçalho) */
 .grade-shows div:nth-child(n+5):hover {
   background-color: #444;
   transition: background-color 0.3s;
