@@ -343,7 +343,6 @@ footer {
 
 .genero-lista ul {
   list-style-type: disc;
-  margin-left: 20px;
   margin-top: 5px;
 }
 
@@ -360,8 +359,4 @@ footer {
   border-left: 3px solid #4dabf7;
   background-color: #222;
   cursor: pointer;
-}
-
-#generos {
-  text-align: left;
 }
