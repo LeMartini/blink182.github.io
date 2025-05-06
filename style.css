@@ -366,10 +366,42 @@ footer {
 }
 
 
+
+.tabela-albuns {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.tabela-albuns th, .tabela-albuns td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.tabela-albuns th {
+  background-color: #6600ff;
+  color: #fff;
+}
+
+.tabela-albuns tr:nth-child(even) {
+  background-color: #333;
+}
+
+.tabela-albuns tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+.tabela-albuns tbody tr:hover {
+  background-color: #ff0066;
+}
+
+
 .tabela-albuns .recent {
-  background-color: #8000ff; /* Fundo roxo para as linhas recentes */
+  background-color: #8000ff !important;
 }
 
 .tabela-albuns .recent:hover {
-  background-color: #9b33cc; /* Fundo roxo mais claro quando o mouse passa por cima */
+  background-color: #9b33cc !important; 
 }
