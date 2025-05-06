@@ -366,30 +366,10 @@ footer {
 }
 
 
-  .tabela-albuns {
-    width: 100%;
-    border-collapse: collapse;
-  }
+.tabela-albuns .recent {
+  background-color: #8000ff; /* Fundo roxo para as linhas recentes */
+}
 
-  .tabela-albuns th, .tabela-albuns td {
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-
-  /* Destaque para álbuns após 2015 */
-  .tabela-albuns tbody tr.recente {
-    background-color: #1f1f3f;
-  }
-
-  .tabela-albuns thead {
-    background-color: #343a40;
-    color: white;
-  }
-
-  .tabela-albuns tbody tr:hover {
-    background-color: #3e3e3e;
-  }
-
-.recente {
-  background-color: #1f1f3f;
+.tabela-albuns .recent:hover {
+  background-color: #9b33cc; /* Fundo roxo mais claro quando o mouse passa por cima */
 }
