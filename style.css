@@ -227,3 +227,95 @@ footer {
   background-color: #444;
   transition: background-color 0.3s;
 }
+
+.estilo-musical {
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.img-responsive {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilo base */
+.btn-estilo {
+  background-color: #ff4081;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* TELAS MENORES QUE 600px */
+@media (max-width: 599px) {
+  .estilo-musical {
+    background-color: orange;
+    font-size: 14px;
+  }
+
+  .btn-estilo {
+    background-color: #d32f2f;
+  }
+
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .img-responsive {
+    display: none;
+  }
+}
+
+/* TELAS ENTRE 600px E 900px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .estilo-musical {
+    background-color: #2196f3;
+    font-size: 16px;
+  }
+
+  .btn-estilo {
+    background-color: #1976d2;
+  }
+
+  .conteudo {
+    flex-direction: row;
+  }
+
+  .img-responsive {
+    display: block;
+  }
+}
+
+/* TELAS MAIORES QUE 900px */
+@media (min-width: 900px) {
+  .estilo-musical {
+    background-color: #6a1b9a;
+    font-size: 18px;
+  }
+
+  .btn-estilo {
+    background-color: #ab47bc;
+  }
+
+  .conteudo {
+    flex-direction: row;
+  }
+
+  .img-responsive {
+    display: block;
+  }
+}
