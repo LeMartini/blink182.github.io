@@ -386,7 +386,10 @@ footer {
     color: white;
   }
 
-  /* Estilo ao passar o mouse sobre a linha */
   .tabela-albuns tbody tr:hover {
     background-color: #3e3e3e;
   }
+
+.recente {
+  background-color: #1f1f3f;
+}
